@@ -7,8 +7,8 @@
     grid-template-areas: 
     "header header header header"
     "nav nav nav nav"
-    "area1. area3. "
-    "area5. area8. "
+    "area1. area2. "
+    "area3. area4. "
     "footer footer footer footer"
     
     ;
@@ -71,7 +71,7 @@ nav{
     text-align: center;
     line-height: 3rem;
     word-spacing: 30px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 a{
@@ -240,7 +240,7 @@ p{
     text-align: center;
 }
 
-@media only screen and (max-width:550px){
+@media only screen and (max-width:750px){
     .wrapper{
         display:grid;
         grid-template-columns: 1fr;
@@ -249,10 +249,10 @@ p{
         "header"
         "form"
         "nav"
+        "area2"
         "area1"
-	    "area3"
-        "area5"
-	    "area8"
+        "area4"
+        "area3"
         "footer"
         ;
     }
