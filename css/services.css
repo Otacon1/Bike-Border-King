@@ -244,19 +244,15 @@ p{
     .wrapper{
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 50px 50px 1fr 1fr auto;
+        grid-template-rows: auto 50px 50px 1fr 1fr 1fr 1fr auto;
         grid-template-areas:
         "header"
         "form"
         "nav"
-        "area1"
         "area2"
-        "area3"
+	    "area1"
         "area4"
-        "area5"
-        "area6"
-        "area7"
-        "area8"
+	    "area3"
         "footer"
         ;
     }
