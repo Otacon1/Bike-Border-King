@@ -7,8 +7,8 @@
     grid-template-areas: 
     "header header header header"
     "nav nav nav nav"
-    "area1. area3. "
-    "area5. area8. "
+    "area1. area3."
+    "area5. area8."
     "footer footer footer footer"
     
     ;
@@ -250,10 +250,18 @@ p{
         "form"
         "nav"
         "area1"
-	    "area3"
+        "area3"
         "area5"
-	    "area8"
+        "area8"
         "footer"
+        ;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .wrapper{
+        display:flex;
+        flex-direction: column
         ;
     }
 }
