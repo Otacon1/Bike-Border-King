@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick= "menu()" value="Start"/>  
+<script>
+
+// Name: Ihtisham Hussain
+// Date: 26/11/2020
+// Lecturer: David Stewart
+// JavaScript Exam
+
+
+var me = "";  // Declaring Global Variable
+
+menu();
+
+function menu(){  // Creating the menu system
+
+    me = prompt("Enter your name");  // Get user to input their name and display a welcome message 
+    alert("Welcome" + " " + me);     // Display name and welcome message
+
+
+    do{      // Do while loop to create the menu allowing the user to pick from 3 options 
+        var choice = 0;
+
+        choice = parseInt(prompt("Enter from the menu " + "\n" + "opt 1 - Create Username" + "\n" +"opt 2 - Timestable" + "\n" +  "opt 3 - Quit" + "\n"));
+        switch(choice){      // Switch statement for the users options menu  
+            case 1:
+                opt1();
+                break;
+            case 2:
+                opt2();
+                break; 
+        }
+
+    }while(choice!=3); {exit();}     // While the loop is not equal to 3 keep running the loop
+} 
+
+    opt1();
+
+    function opt1(){
+    alert(me + " " + "you have slected opt1 - Create Username");   // Alert user their name and display a welcome message for option 1 
+
+    var username = prompt("enter your full name please");   // Get user to input their full name 
+
+    function create_user(username){   // Create a function for username 
+    var string1 = username.toLowerCase();   // Set username to lowercase letters
+    string1 = string1.substr(0,1);          // Get character 1 of the first name 
+
+    var pos = username.indexOf(" ");     // Get the second name 
+    var l = username.length;             // Get the length of the username 
+    var string2 = username.substring(pos+1,l);  // Adds first character of 1st anme to the 2nd name 
+
+    username = string1+string2;  // Add both names together to create username 
+    return username;  // Return final username format
+
+       
+}
+
+    alert(create_user(username));   // Display final result of username 
+}
+
+    opt2();
+
+    function opt2(){
+    alert(me + " " + "you have slected opt2 - Create Timestable");   // Alert user their name and display a welcome message for option 2
+    
+    times_Table();
+
+    function times_Table(){    // Create a function for the timestable
+
+    var number = 0;   // Declaring local variables 
+    var result = 0;
+    var display = "";
+      
+    var number = parseInt(prompt('Enter a number between 1-12'));   // Get user to input a number between 1-12
+
+    for(count = 1; count <= 12; count++){  // Start of loop for timestable 
+        result = number * count;    // Multiply users number
+        display += (count + " x " + number + " = " + result + " \n");  // Print out the result in correct format 
+        
+         
+}
+    alert(display);  // Display timestable
+}
+ 
+}
+
+</script>
+
+</body>
+
+</html>

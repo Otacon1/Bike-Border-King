@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Output with JavaScript </title>
+
+</head>
+
+<body>
+
+
+
+<script>
+
+var me = "";
+var num1 = 0;
+var num2 = 0; 
+var total = 0;
+
+menu();
+
+
+function menu(){
+    
+    me = prompt("Enter your name");
+    alert("Welcome" + " " + me);
+
+
+    do{
+        var choice = 0;
+        choice = parseInt(prompt("Enter from the menu " + "\n"+ "option 1 - Add" + "\n" +"option 2 - Subtract" + "\n" +  "option 3 - Divide" + "\n" +"option 4 - Multiply" + "\n" +"option 5 - quit"));
+        switch(choice){
+            case 1:
+                option1();
+                break;
+            case 2:
+                option2();
+                break;
+            case 3:
+                option3();
+                break;
+            case 4:
+                option4();
+                break;
+
+        }
+
+    }while(choice!=5);
+}
+
+
+
+function option1(){
+    alert(me + " " + "you have slected option1 - add numbers");
+
+    num1=parseInt(prompt("Enter a number"));
+    num2=parseInt(prompt("Enter a second number"));
+
+    total = num1 + num2
+    alert(num1 + " + " + num2 + " = "  + total);
+}
+
+function option2(){
+  
+    alert(me + " " + "you have slected option2 - subtract numbers");
+
+    num1=parseInt(prompt("Enter a number"));
+    num2=parseInt(prompt("Enter a second number"));
+
+    total = num1 - num2
+    alert(num1 + " - " + num2 + " = "  + total);
+}
+
+function option3(){
+    
+    alert(me + " " + "you have slected option3 - multiply numbers");
+
+    num1=parseInt(prompt("Enter a number"));
+    num2=parseInt(prompt("Enter a second number"));
+
+    total = num1 * num2
+    alert(num1 + " * " + num2 + " = "  + total);
+}
+
+function option4(){
+
+    alert(me + " " + "you have slected option4 - divide numbers");
+
+    num1=parseInt(prompt("Enter a number"));
+    num2=parseInt(prompt("Enter a second number"));
+
+    total = num1 / num2
+    alert(num1 + " / " + num2 + " = "  + total);
+}
+
+
+
+</script>
+
+</body>
+
+
+</html>
+

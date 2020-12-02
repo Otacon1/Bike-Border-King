@@ -240,7 +240,7 @@ p{
     text-align: center;
 }
 
-@media only screen and (max-width:550px){
+@media only screen and (max-width:600px){
     .wrapper{
         display:grid;
         grid-template-columns: 1fr;
